@@ -1,0 +1,108 @@
+$bg-color: transparent;
+$border: transparent;
+// 导航栏高度
+$height: 70px;
+// 导航栏标签高度
+$liHeight: 65px;
+// 堆叠高度
+$z-index: 100;
+
+// 自定义导航栏背景
+.navbar {
+  width: 100%;
+  height: $height;
+  position: fixed;
+  z-index: $z-index;
+  top: 0;
+  transition: background-color 0.2s;
+  background: url(~@/assets/head-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
+}
+
+// 自定义导航栏
+.navbarMenu {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: $z-index;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
+
+  ul {
+    height: $height;
+
+    li {
+      height: $liHeight;
+      margin-top: 5px;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      padding: 0px 20px !important;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+      width: 140px;
+      height: 38px;
+      vertical-align: middle;
+    }
+  }
+
+  .headshot {
+    width: 35px;
+    height: 35px;
+    margin: 0 0 5px 0;
+    border-radius: 100%;
+  }
+
+  .language-flag {
+    width: 25px;
+    height: 15px;
+  }
+}
+
+.submenu-title {
+  color: grey !important;
+}
+
+// 覆盖element导航标签样式
+>>> .el-menu.el-menu--horizontal {
+  border-bottom: none;
+}
+
+// 覆盖element有子菜单的导航标签样式
+>>> .el-menu--horizontal > .el-submenu .el-submenu__title {
+  height: $liHeight;
+  padding-right: 10px !important;
+  font-size: 16px !important;
+}
+
+>>> .el-menu--horizontal > .el-menu-item.is-active {
+  border-bottom: $border !important;
+}
+
+>>> .el-menu--horizontal > .el-submenu.is-active .el-submenu__title {
+  border-bottom: $border !important;
+}
+
+>>> .el-menu-item {
+  background-color: $bg-color !important;
+}
+>>> .el-menu-item.is-active {
+  background-color: $bg-color !important;
+}
+>>> .el-submenu__title {
+  background-color: $bg-color !important;
+}

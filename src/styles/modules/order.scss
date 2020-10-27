@@ -1,0 +1,34 @@
+.headerInfo {
+  margin-top: 25px;
+}
+
+/deep/ .el-form--inline .el-form-item {
+  margin-right: 0px;
+}
+/deep/ .el-form-item {
+  margin-bottom: 25px;
+}
+
+.handleBtn {
+  text-align: right;
+}
+
+.custom-pagination {
+  margin: 30px 0 0 20px;
+  text-align: right;
+}
+
+.form-line {
+  margin: 15px 0 40px 0;
+}
+
+.line-top {
+  margin-top: 40px;
+}
+
+.upload-tips {
+  padding-left: 13px;
+  font-size: 14px;
+  color: #f56c6c;
+  font-weight: 600;
+}

@@ -1,0 +1,114 @@
+/* 全局样式 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+html {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 1200px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+h2:focus {
+  outline: 0;
+}
+
+h4,
+p {
+  margin: 0px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+dl {
+  margin: 0px;
+}
+
+dt {
+  margin: 0px;
+}
+
+dd {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+/* 自定义全局样式 */
+// title-style
+.title-fontSize {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.title-position {
+  text-align: center;
+  margin: 30px 0 50px 0;
+  opacity: 0.7;
+}
+
+.successInfo {
+  cursor: pointer;
+  color: #13c2c2;
+}
+
+.bottom-hr {
+  height: 0;
+  overflow: visible;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.hanleNewsActive {
+  color: $color-green;
+}
+
+// all-div shadow style
+.div-shadow {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+// profile 子路由样式
+.profile-layout {
+  padding: 0 20px;
+}
+
+.profile-submit {
+  $padding: 30px;
+  padding-left: $padding;
+  padding-right: $padding;
+  margin: 15px 0 20px 0;
+}

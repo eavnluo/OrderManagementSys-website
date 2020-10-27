@@ -1,0 +1,49 @@
+.form-bg {
+  background-color: #f7f7f7;
+  padding: 120px 0 50px 0;
+}
+
+.form {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: top;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #3c4858 !important;
+
+  .form-content {
+    width: 390px;
+    margin: 15px 90px 15px 0;
+
+    .title {
+      margin-bottom: 25px;
+      font-size: 27px;
+    }
+
+    .formItem-position {
+      margin-bottom: 10px !important;
+    }
+
+    .forgetPwd {
+      cursor: pointer;
+      color: #3c4858 !important;
+      &:hover {
+        color: #13c2c2 !important;
+      }
+    }
+  }
+
+  .handle-router {
+    font-size: 14px;
+    span {
+      cursor: pointer;
+      color: #13c2c2 !important;
+      &:hover {
+        color: #13abab;
+      }
+    }
+  }
+}

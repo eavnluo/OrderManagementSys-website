@@ -1,0 +1,26 @@
+// 聚潍通主题颜色
+$--color-primary: #13c2c2;
+
+// 主要颜色
+$color-green: #13c2c2;
+
+/* 修改element默认样式 */
+.el-menu {
+  border: 0;
+}
+
+// router-view transtion 过渡样式
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.3s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
